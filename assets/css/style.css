@@ -1,0 +1,24 @@
+
+
+.container {
+    background-color: aqua;
+    width: 50%;
+    margin: 15px auto;
+    padding: 15px 15px;
+    opacity: .85;
+}
+
+#titlecontainer {
+    color:  #eb5713;
+    opacity: 1;
+    background-color: #212780ef;
+    padding: 5px 5px;
+}
+
+#instructions {
+    line-height: 25px;
+}
+
+#hit {
+    font-size: 25px;
+}

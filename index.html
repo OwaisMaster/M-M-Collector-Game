@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </meta>
+    <title> M&M Collector</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<script src="assets/javascript/game.js" type="text/javascript"></script>
+
+<style>
+    body {
+        font-family: 'Chilanka', cursive;
+    }
+
+    body {
+        background: url('assets/images/mandmWallpaper.jpg');
+        background-size: cover;
+        text-align: center;
+    }
+</style>
+
+<div class="container" id="titlecontainer">
+
+    <body>
+        <div class="row">
+
+            <div class="col-12">
+                <p>
+                    <h1 id="title"> <b>M&M Collector</b></h1>
+                </p>
+            </div>
+        </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="container" id="instructions">
+                <h4><b>Instructions</b></h4>
+                <li> The game will give you a random number of M&M's to collect</li>
+                <li> Each game the values of the M&M's change</li>
+                <li> Press the M&M buttons to collect them all &</li>
+                <p> try not to overshoot! </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row" id="randNum">
+        <div class="col-1">
+
+        </div>
+        <div class="col-5">
+            <p id="hit">Number to hit: </p>
+            <b><span id="randomNum"></span></b>
+        </div>
+        <div class="col-5" id="totalScore">
+            <p id="hit">Total score is: </p>
+
+            <b>
+                <p id="total">0</p>
+            </b>
+        </div>
+        <div class="col-1"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-1">
+
+        </div>
+        <div class="col-10" id="imgs">
+
+
+
+            <img onclick="checkmAndm1();" id="orangemandm" class="mandm" src="assets/images/orangemandm.jpg"
+                alt="Orange m&m" width=auto height="60">
+            <img onclick="checkmAndm2();" id="bluemandm" class="mandm" src="assets/images/bluemandm.jpg" alt="Blue m&m"
+                width=auto height="60">
+            <img onclick="checkmAndm3();" id="redmandm" class="mandm" src="assets/images/redmandm.jpg" alt="Red m&m"
+                width=auto height="60">
+            <img onclick="checkmAndm4();" id="greenmandm" class="mandm" src="assets/images/greenmandm.jpg"
+                alt="Green m&m" width=auto height="60">
+
+        </div>
+        <div class="col-1">
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <div id="stats">
+        <p id="status"></p>
+        <p id="hit">Wins:
+            <span id="wins">0</span>
+        </p>
+        <p id="hit">Misses:
+            <span id="losses">0</span>
+        </p>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    startGame();
+</script>
+</body>
+</div>
+
+</html>
