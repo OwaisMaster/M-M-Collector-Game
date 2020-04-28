@@ -11,5 +11,8 @@ A remake of the crystal collector game based on jQuery and JavaScript.
 4. If the total score goes above the random number from the beginning of the game, the player loses.
 5. The game will restart regardless of outcome.
 6. Whenever the game restarts, there will be a new random number displayed to the player. The m&ms will also have four new hidden values with the total score being set at zero.
+###### The random number shown at the start of the game should be between 19 - 120
+
+###### Each crystal should have a random hidden value between 1 - 12
 
 ### Deployed at: https://owaismaster.github.io/M-and-M-Collector-Game/
