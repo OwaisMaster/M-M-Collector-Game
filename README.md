@@ -1,8 +1,7 @@
 # M&M Collector Game
 
 ## Overview
-A remake of the crystal collector game based on jQuery and JavaScript.
-
+A remake of the crystal collector game based on jQuery.
 ### Game Notes
 1. This game has 4 M&M buttons
 2. Each round the buttons values change randomly
